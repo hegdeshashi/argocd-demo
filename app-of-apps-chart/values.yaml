@@ -2,9 +2,6 @@ clusters:
 - name: today
   destinationServer: https://kubernetes.default.svc
   apps:
-    mycode:
-      enabled: true
-      version: "0.0.1"
     prometheus:
       enabled: true
       version: "3.0.0"
