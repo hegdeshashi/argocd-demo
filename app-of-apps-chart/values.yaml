@@ -1,5 +1,5 @@
 clusters:
-- name: minikube4test
+- name: Today
   destinationServer: https://kubernetes.default.svc
   apps:
     prometheus:
