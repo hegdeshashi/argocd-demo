@@ -1,5 +1,5 @@
 clusters:
-- name: today
+- name: maytoday
   destinationServer: https://kubernetes.default.svc
   apps:
     prometheus:
