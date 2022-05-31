@@ -18,3 +18,15 @@ clusters:
     sampleApp:
       enabled: true
       branch: HEAD
+      
+
+- name: Tensai
+  destinationServer: https://aks197-dns-507c5200.hcp.centralus.azmk8s.io
+  apps:
+    prometheus:
+      enabled: true
+      version: "1.1.1"
+    sampleApp:
+      enabled: true
+      branch: HEAD      
+      
