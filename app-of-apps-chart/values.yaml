@@ -1,5 +1,5 @@
 clusters:
-- name: Today
+- name: today
   destinationServer: https://kubernetes.default.svc
   apps:
     prometheus:
@@ -9,7 +9,7 @@ clusters:
       enabled: true
       branch: HEAD
 
-- name: Azure
+- name: azure
   destinationServer: https://29826A98732927DB9FCA848011A11445.gr7.ap-south-1.eks.amazonaws.com
   apps:
     prometheus:
@@ -20,7 +20,7 @@ clusters:
       branch: HEAD
       
 
-- name: Tensai
+- name: tensai
   destinationServer: https://aks197-dns-507c5200.hcp.centralus.azmk8s.io
   apps:
     prometheus:
