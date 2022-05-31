@@ -8,25 +8,3 @@ clusters:
     sampleApp:
       enabled: true
       branch: HEAD
-
-- name: azure
-  destinationServer: https://29826A98732927DB9FCA848011A11445.gr7.ap-south-1.eks.amazonaws.com
-  apps:
-    prometheus:
-      enabled: true
-      version: "0.0.1"
-    sampleApp:
-      enabled: true
-      branch: HEAD
-      
-
-- name: tensai
-  destinationServer: https://aks197-dns-507c5200.hcp.centralus.azmk8s.io
-  apps:
-    prometheus:
-      enabled: true
-      version: "1.1.1"
-    sampleApp:
-      enabled: true
-      branch: HEAD      
-      
