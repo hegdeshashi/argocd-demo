@@ -1,4 +1,3 @@
-clusters:
 - name: today
   destinationServer: https://kubernetes.default.svc
   apps:
@@ -8,4 +7,3 @@ clusters:
     sampleApp:
       enabled: true
       branch: HEAD
-
