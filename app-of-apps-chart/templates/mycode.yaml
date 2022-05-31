@@ -15,12 +15,7 @@ spec:
   source:
     credential: test-kubeconfig
     repoURL: https://tensai-dev-dns-ae4b433d.hcp.southindia.azmk8s.io:443
-    additionalData:
-      deploymentName: sa
-      namespace: sa
-      serviceEnabled: true
-      serviceType: LoadBalancer
-      servicePort: 8080
+    targetRevision: {{ .apps.prometheus.version }}
   syncPolicy:
     automated:
       prune: true
