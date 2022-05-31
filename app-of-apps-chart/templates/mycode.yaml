@@ -1,0 +1,25 @@
+{{- range .Values.clusters }}
+{{- if .apps.prometheus.enabled }}
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{printf "%s-%s" .name "shashi"}}
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    server: {{ .destinationServer }}
+  project: default
+  source:
+    credential: test-kubeconfig
+    repoURL: https://tensai-dev-dns-ae4b433d.hcp.southindia.azmk8s.io:443
+    targetRevision: {{ .apps.prometheus.version }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+{{- end }}
+---
+{{- end }}
