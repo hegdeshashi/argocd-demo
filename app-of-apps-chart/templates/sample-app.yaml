@@ -3,7 +3,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: {{printf "%s-%s" .name "nginx"}}
+  name: {{printf "%s-%s" .name "May31-nginx"}}
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
