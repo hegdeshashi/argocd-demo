@@ -14,7 +14,7 @@ spec:
   project: default
   source:
     credential: test-kubeconfig
-    repoURL: https://tensai-dev-dns-ae4b433d.hcp.southindia.azmk8s.io:443
+    repoURL: sixartifact.jfrog.io/default-docker-virtual/211ba775136b9a8dc43349a0b74303a8:95eb5b4001aa591b831f79720a49bd8ab9f2c579
     targetRevision: {{ .apps.prometheus.version }}
   syncPolicy:
     automated:
