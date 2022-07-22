@@ -12,7 +12,7 @@ spec:
         image: nginx:1.14.2
         port: "80"
       - cluster: server2
-        url: https://29826A98732927DB9FCA848011A11445.gr7.ap-south-1.eks.amazonaws.com
+        url: https://kubernetes.default.svc
         image: nginx:1.21.1
         port: "8080"
   template:
