@@ -1,4 +1,3 @@
-
 {{- range .Values.clusters }}
 {{- if .apps.prometheus.enabled }}
 apiVersion: argoproj.io/v1alpha1
